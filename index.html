@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International Student Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f7f7f7;
+            color: #222;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #1f4e79;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1f4e79;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e8eef5;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: #1f4e79;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        .details {
+            background-color: #eef4fa;
+            padding: 15px;
+            border-left: 4px solid #1f4e79;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #1f4e79;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page">
+
+    <h1>International Student Hub</h1>
+    <p style="text-align:center;">A simple support website for international students</p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#expenses">Living Expenses</a>
+        <a href="#study">Study Tips</a>
+        <a href="#work">Work and Visa</a>
+        <a href="#tips">Tips</a>
+        <a href="server-status.html">Server Status</a>
+    </nav>
+
+    <section class="details">
+        <p><strong>Name:</strong> Ashmandeep Kaur</p>
+        <p><strong>Student ID:</strong> 35680945</p>
+        <p><strong>Unit:</strong> ICT171</p>
+        <p><strong>Cloud Provider:</strong> Microsoft Azure</p>
+        <p><strong>Public IP:</strong> 40.81.23.165</p>
+        <p><strong>Domain:</strong> internationalstudenthub.site</p>
+    </section>
+
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>
+            This project is a cloud-based International Student Support Website hosted on a Microsoft Azure Linux virtual machine.
+            The website is designed to provide simple and useful information for international students who are adjusting to life
+            and study in a new country.
+        </p>
+        <p>
+            The server was manually configured using SSH and command-line tools. NGINX is used as the web server, the domain
+            name is connected using DNS, and HTTPS is enabled using a Let's Encrypt SSL/TLS certificate.
+        </p>
+    </section>
+
+    <section id="expenses">
+        <h2>Living Expenses</h2>
+        <p>
+            Living expenses are one of the main challenges for international students. Students need to plan for rent,
+            groceries, transport, phone bills, internet, and other daily costs.
+        </p>
+        <ul>
+            <li>Create a simple weekly or monthly budget.</li>
+            <li>Compare grocery prices before shopping.</li>
+            <li>Use student discounts where possible.</li>
+            <li>Keep some emergency savings for unexpected costs.</li>
+        </ul>
+    </section>
+
+    <section id="study">
+        <h2>Study Tips</h2>
+        <p>
+            Studying in a new academic environment can take time. Students should stay organised and ask for support early
+            if they are unsure about assessments or unit requirements.
+        </p>
+        <ul>
+            <li>Read the unit guide carefully.</li>
+            <li>Start assignments early.</li>
+            <li>Attend tutorials and labs regularly.</li>
+            <li>Keep notes from lectures and practical sessions.</li>
+        </ul>
+    </section>
+
+    <section id="work">
+        <h2>Work and Visa Guidance</h2>
+        <p>
+            Many international students work part-time while studying. It is important to understand visa conditions and
+            balance work with study responsibilities.
+        </p>
+        <ul>
+            <li>Check visa conditions using official government sources.</li>
+            <li>Keep records of payslips and work hours.</li>
+            <li>Balance work commitments with study workload.</li>
+            <li>Ask for support if workplace rights are unclear.</li>
+        </ul>
+    </section>
+
+    <section id="tips">
+        <h2>Tips and Tricks</h2>
+        <p>
+            Moving to a new country can be confusing at first, but small steps can make student life easier.
+        </p>
+        <ul>
+            <li>Save important contacts such as university support and emergency services.</li>
+            <li>Use public transport apps to plan travel.</li>
+            <li>Keep digital copies of important documents.</li>
+            <li>Join student groups to meet people and get support.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Server Status Page</h2>
+        <p>
+            This project includes a Bash script that creates a server status page. The script shows information such as
+            server uptime, disk usage, memory usage, and NGINX status.
+        </p>
+        <p>
+            <a href="server-status.html">Click here to view the server status page</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>ICT171 Cloud Server Project - International Student Hub</p>
+    </footer>
+
+</div>
+</body>
+</html>

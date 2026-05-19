@@ -44,16 +44,14 @@ This website gives simple information in one place so students can access it eas
 
 ## Website Functionality
 
-The website currently includes:
+The website is now structured as a multi - page website . the main homepage links to separate pages for that  currently include
+- Living Expenses
+- Study Tips
+- Work and Visa Guidance
+- Tips and Tricks
+- Server Status output page
+- Original Proposal backup page
 
-- Project introduction
-- Student details
-- International student support information
-- Living expenses information
-- Study tips
-- Work and visa guidance
-- Tips and tricks for student life
-- Server status page created by a Bash script
 
 ## Server Setup
 

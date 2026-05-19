@@ -5,172 +5,159 @@
     <title>International Student Hub</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 30px;
-            background-color: #f7f7f7;
+            background: #f4f7fb;
             color: #222;
         }
 
-        .page {
-            max-width: 1000px;
-            margin: auto;
-            background-color: white;
-            padding: 25px;
-            border: 1px solid #ddd;
-        }
-
-        h1 {
-            color: #1f4e79;
+        .hero {
+            background: #1f4e79;
+            color: white;
             text-align: center;
+            padding: 60px 20px;
         }
 
-        h2 {
-            color: #1f4e79;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-        }
-
-        nav {
-            text-align: center;
-            margin: 20px 0;
-            padding: 10px;
-            background-color: #e8eef5;
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: #1f4e79;
-            text-decoration: none;
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
             font-weight: bold;
         }
 
-        section {
-            margin-bottom: 25px;
+        .hero h2 {
+            font-size: 24px;
+            margin: 8px 0;
+            font-weight: bold;
         }
 
-        .details {
-            background-color: #eef4fa;
-            padding: 15px;
-            border-left: 4px solid #1f4e79;
+        .student-info {
+            background: white;
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 6px solid #1f4e79;
+        }
+
+        .student-info p {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .menu {
+            max-width: 900px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .card h3 {
+            color: #1f4e79;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            background: #1f4e79;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
-            margin-top: 30px;
-            padding: 15px;
-            background-color: #1f4e79;
+            background: #163a5c;
             color: white;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .menu {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
         }
     </style>
 </head>
-
 <body>
-<div class="page">
 
-    <h1>International Student Hub</h1>
-    <p style="text-align:center;">A simple support website for international students</p>
+    <div class="hero">
+        <h1>INTERNATIONAL STUDENT HUB</h1>
+        <h2>ICT171 Cloud Server Project</h2>
+        <p>A simple support website for international students</p>
+    </div>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#expenses">Living Expenses</a>
-        <a href="#study">Study Tips</a>
-        <a href="#work">Work and Visa</a>
-        <a href="#tips">Tips</a>
-        <a href="server-status.html">Server Status</a>
-    </nav>
-
-    <section class="details">
+    <div class="student-info">
         <p><strong>Name:</strong> Ashmandeep Kaur</p>
         <p><strong>Student ID:</strong> 35680945</p>
-        <p><strong>Unit:</strong> ICT171</p>
+        <p><strong>Unit:</strong> ICT171 Introduction to Server Environments and Architectures</p>
         <p><strong>Cloud Provider:</strong> Microsoft Azure</p>
-        <p><strong>Public IP:</strong> 40.81.23.165</p>
         <p><strong>Domain:</strong> internationalstudenthub.site</p>
-    </section>
+        <p><strong>Public IP:</strong> 40.81.23.165</p>
+    </div>
 
-    <section id="about">
-        <h2>About This Project</h2>
-        <p>
-            This project is a cloud-based International Student Support Website hosted on a Microsoft Azure Linux virtual machine.
-            The website is designed to provide simple and useful information for international students who are adjusting to life
-            and study in a new country.
-        </p>
-        <p>
-            The server was manually configured using SSH and command-line tools. NGINX is used as the web server, the domain
-            name is connected using DNS, and HTTPS is enabled using a Let's Encrypt SSL/TLS certificate.
-        </p>
-    </section>
+    <div class="menu">
+        <div class="card">
+            <h3>Living Expenses</h3>
+            <p>Information about budgeting, rent, groceries, transport, and daily student costs.</p>
+            <a href="living.html">Open Page</a>
+        </div>
 
-    <section id="expenses">
-        <h2>Living Expenses</h2>
-        <p>
-            Living expenses are one of the main challenges for international students. Students need to plan for rent,
-            groceries, transport, phone bills, internet, and other daily costs.
-        </p>
-        <ul>
-            <li>Create a simple weekly or monthly budget.</li>
-            <li>Compare grocery prices before shopping.</li>
-            <li>Use student discounts where possible.</li>
-            <li>Keep some emergency savings for unexpected costs.</li>
-        </ul>
-    </section>
+        <div class="card">
+            <h3>Study Tips</h3>
+            <p>Simple academic tips for staying organised and managing university study.</p>
+            <a href="study.html">Open Page</a>
+        </div>
 
-    <section id="study">
-        <h2>Study Tips</h2>
-        <p>
-            Studying in a new academic environment can take time. Students should stay organised and ask for support early
-            if they are unsure about assessments or unit requirements.
-        </p>
-        <ul>
-            <li>Read the unit guide carefully.</li>
-            <li>Start assignments early.</li>
-            <li>Attend tutorials and labs regularly.</li>
-            <li>Keep notes from lectures and practical sessions.</li>
-        </ul>
-    </section>
+        <div class="card">
+            <h3>Work and Visa Guidance</h3>
+            <p>Basic guidance about balancing work, study, and checking visa conditions.</p>
+            <a href="work.html">Open Page</a>
+        </div>
 
-    <section id="work">
-        <h2>Work and Visa Guidance</h2>
-        <p>
-            Many international students work part-time while studying. It is important to understand visa conditions and
-            balance work with study responsibilities.
-        </p>
-        <ul>
-            <li>Check visa conditions using official government sources.</li>
-            <li>Keep records of payslips and work hours.</li>
-            <li>Balance work commitments with study workload.</li>
-            <li>Ask for support if workplace rights are unclear.</li>
-        </ul>
-    </section>
+        <div class="card">
+            <h3>Tips and Tricks</h3>
+            <p>Practical everyday tips for international students living in a new country.</p>
+            <a href="tips.html">Open Page</a>
+        </div>
 
-    <section id="tips">
-        <h2>Tips and Tricks</h2>
-        <p>
-            Moving to a new country can be confusing at first, but small steps can make student life easier.
-        </p>
-        <ul>
-            <li>Save important contacts such as university support and emergency services.</li>
-            <li>Use public transport apps to plan travel.</li>
-            <li>Keep digital copies of important documents.</li>
-            <li>Join student groups to meet people and get support.</li>
-        </ul>
-    </section>
+        <div class="card">
+            <h3>Server Status</h3>
+            <p>View the live output from the Bash script created for this project.</p>
+            <a href="server-status.html">Open Page</a>
+        </div>
 
-    <section>
-        <h2>Server Status Page</h2>
-        <p>
-            This project includes a Bash script that creates a server status page. The script shows information such as
-            server uptime, disk usage, memory usage, and NGINX status.
-        </p>
-        <p>
-            <a href="server-status.html">Click here to view the server status page</a>
-        </p>
-    </section>
+        <div class="card">
+            <h3>Original Proposal</h3>
+            <p>Backup copy of the original project proposal page.</p>
+            <a href="index-backup.html">Open Page</a>
+        </div>
+    </div>
 
     <footer>
-        <p>ICT171 Cloud Server Project - International Student Hub</p>
+        <p>Created for ICT171 Cloud Server Project</p>
     </footer>
 
-</div>
 </body>
 </html>

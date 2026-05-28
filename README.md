@@ -26,7 +26,7 @@ License: MIT License
 
 ## Video Explainer
 
-Video link: To be added before final submission.
+Video link: https://youtu.be/Hi-efGWbZC0
 
 ## Project Overview
 
